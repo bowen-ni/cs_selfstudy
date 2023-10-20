@@ -5,6 +5,15 @@ def is_palindrome(my_string):
         return (my_string[0] == my_string[-1])
     return(my_string[0] == my_string[-1] and is_palindrome(my_string[1:-1]))
 
+# Second Method
+# def is_palindrome(str):
+#   if len(str) < 2:
+#     return True
+#   if str[0] != str[-1]:
+#     return False
+#   return is_palindrome(str[1:-1])
+
+
 print(is_palindrome("abba") == True)
 print(is_palindrome("abcba") == True)
 print(is_palindrome("") == True)
